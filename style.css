@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    height: 400px;
+    background-image:linear-gradient(to right,rgba(247, 243, 242, 0.3),rgb(18, 17, 17,0.7)), url(https://www.enterprise.com/content/dam/ecom/utilitarian/common/exotics/exotics-hero-v2.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.inner{
+    padding: 4rem;
+
+}
+
+
+h2{
+    padding: 1rem;
+    font-family: "Lilita One", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+ul{
+        list-style-type:none;
+}
+
+ul li{
+    background-color: grey;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    border-left: 2px solid black;
+    border-radius: 10px;
+
+}
+
+ul li:first-child{
+    background-color: orange;
+}
+
+input{
+    width: 150px;
+    height: 30px;
+    background-color:white ;
+    border: none;
+    margin: 1px;
+}
+
+input:last-child{
+    background-color: darkorange;
+}
+
+input:last-child:hover{
+    background-color: purple;
+}
+
+ul li::after{
+    content:url(./check-solid.svg);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input:nth-child(even):focus{
+    background-color: red;
+}
